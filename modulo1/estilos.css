@@ -1,0 +1,148 @@
+
+
+  body{
+    margin:0px;
+    padding:0px;
+    font-family: arial;
+  }
+
+  .navbar-pinterest {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    height: 50px;
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight:bold;
+  }
+  
+  .icon-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+ 
+.navbar-pinterest .pinterest-icon{
+    width:25px;
+    padding:10px;
+    cursor:pointer;
+    border-radius:50%;
+}
+.navbar-pinterest .pinterest-icon:hover{
+    background:#eeeeee;
+  }
+  .navbar-pinterest .home{
+    color:#fff;
+    background:#000000;
+    padding:12px 25px;
+    cursor:pointer;
+    user-select:none;
+    border-radius:40px;
+    margin-right:auto;
+    text-decoration: none;
+  }
+  .navbar-pinterest .finder{
+    width:auto;
+    margin:0 auto;
+    padding:12px 35px;
+    border-radius:40px;
+    outline:none;
+    position:relative;
+    background-color:#efefef;
+    font-size:15px;
+    background-image:url("https://cdn4.iconfinder.com/data/icons/music-ui-solid-24px/24/search-3-256.png");
+    background-size:21px;
+    background-repeat:no-repeat;
+    background-position:center right;
+    background-position:10px;
+    color:gray;
+    border:4px solid transparent;
+  }
+
+
+  .navbar-pinterest .finder:hover{
+    background-color:#3333;
+  }
+  .navbar-pinterest .finder:focus{
+    border:4px solid #7bb5f0;
+    padding:12px 20px;
+    background-image:none;
+  }
+  .navbar-pinterest .finder::placeholder{
+    user-select:none;
+  }
+  .icon-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+  }
+
+  .icon-container .icon{
+    width:25px;
+    border-radius:50%;
+    cursor:pointer;
+    padding:10px;
+  }
+
+  .icon-container .icon:hover{
+    background-color:#eeeeee;
+  }
+  .icon-container .btn{
+    width:14px;
+    padding:5px;
+  }
+
+
+  .card-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:100px 0px;
+    flex-wrap:wrap;
+  }
+  .card-image{
+    border-radius:20px;
+    margin:10px;
+    width:250px;
+    height:320px;
+    overflow:hidden;
+    position:relative;
+    z-index:-1;
+  }
+  .card-container::after {
+    content: "";
+    clear: both;
+    display: table;
+
+  }
+
+  .card-image .image{
+    width:100%;
+    border-radius:20px;
+   
+  }
+
+  
+/*.content{
+    width: 100%;
+    min-height: 100%;
+}*/
+
+.card-image:hover{
+    transform: scale(1.1);
+    filter: grayscale(50%);
+  }
+
+  @media screen and (max-width: 200px) {
+    .navbar-pinterest {
+      height: 40px;
+      padding: 5px;
+      font-size: 14px;
+    }
+  }
