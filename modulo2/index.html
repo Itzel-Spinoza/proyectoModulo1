@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cajero Automático</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <h2>Selecciona una cuenta</h2>
+    <span id="nombrePersona"></span>
+    <select id="cuentasSelect">
+      <option value="0">Persona 1</option>
+      <option value="1">Persona 2</option>
+      <option value="2">Persona 3</option>
+    </select>
+    <br><br>
+    <input type="password" id="password" placeholder="Ingresa tu contraseña">
+    <button onclick="login()">Ingresar</button>
+    <div id="acciones" class="hidden">
+      <h3>Opciones:</h3>
+      <button onclick="consultarSaldo()">Consultar Saldo</button>
+      <button onclick="ingresarMonto()">Ingresar Monto</button>
+      <button onclick="retirarMonto()">Retirar Monto</button>
+    </div>
+    <div id="resultado" class="hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
