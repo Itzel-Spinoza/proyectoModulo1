@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/eb4727e9f5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="pokedex-image">
+        <h1><img src="pokedex.png"></h1>
+        <div class="container-searchbar">
+          
+        <div class="search-bar">
+            <form action="" onsubmit="searchPokemon(event)" id="form">  
+            <input class="input" id="pokemon" type="text" placeholder="Busca pokemon por nombre">
+            </form>
+            <i class="fas fa-search" style="color: #9a9b9e;"></i>
+            
+        </div>
+        
+        </div>
+    </div>
+        <!--<div class="buttons-container">
+            <h5>Filtrar por tipo:</h3>
+            <button class="type-button" id="aguaButton">Agua</button>
+            <button class="type-button" id="electricoButton">Eléctrico</button>
+            <button class="type-button" id="fuegoButton">Fuego</button>
+            <button class="type-button" id="hadaButton">Hada</button>
+            <button class="type-button" id="plantaButton">Planta</button>
+            <button class="type-button" id="rocaButton">Roca</button>
+            <button class="type-button" id="tierraButton">Tierra</button>
+            <button class="type-button" id="psiquicoButton">Psiquico</button>
+        </div>-->
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="close" id="modalClose">&times;</span>
+                <!-- Aquí se mostrarán los detalles del Pokémon buscado -->
+                <div class="modal-body" id="modalBody"></div>
+            </div>
+        </div>
+
+        <div id="pokemonCards" class="pokemon-container"></div>
+        
+        
+        <script src="./script.js"></script>
+</body>
+</html>
